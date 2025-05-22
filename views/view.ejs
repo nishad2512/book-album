@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+
+  <!-- Hero Section -->
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light"><%= book.name %></h1>
+        </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row featurette align-items-center">
+        <div class="col-md-7">
+            <h2 class="featurette-heading"><%= book.name %> <span class="text-muted" style="font-size: medium;">by <%= book.author %></span></h2>
+            <p class="lead"><%= book.review %></p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-fluid" src="<%= book.url %>" style="width:500; height:500;" alt="Feature image">
+        </div>
+    </div>
+</div>
+
+
+<%- include('partials/footer.ejs') %>
