@@ -117,9 +117,6 @@ app.post('/admin-login', (req, res) => {
     }
 });
 
-app.use(express.static('public'));
-app.use(bodyParser.urlencoded({ extended: true }));
-
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
